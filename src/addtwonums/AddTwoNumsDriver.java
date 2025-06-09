@@ -17,6 +17,7 @@ public class AddTwoNumsDriver {
         int[] test2Expected = {0};
         test(test2List1, test2List2, 2, test2Expected);
 
+        // Failed, trailing 1 is missing from result
         int[] test3List1 = {9,9,9,9,9,9,9};
         int[] test3List2 = {9,9,9,9};
         int[] test3Expected = {8,9,9,9,0,0,0,1};

@@ -3,14 +3,24 @@ package addtwonums;
 public class AddTwoNumsDriver {
     public static void main(String[] args) {
         // list representation of 342
-        int[] list1 = {2, 4, 3};
+        int[] test1List1 = {2, 4, 3};
         // list representation of 465
-        int[] list2 = {5, 6, 4};
+        int[] test1List2 = {5, 6, 4};
         // List representation of expected result (807)
-        int[] expected = {7, 0, 8};
+        int[] test1Expected = {7, 0, 8};
 
         // Test 1 (342 + 465)
-        test(list1, list2, 1, expected); 
+        test(test1List1, test1List2, 1, test1Expected); 
+
+        int[] test2List1 = {0};
+        int[] test2List2 = {0};
+        int[] test2Expected = {0};
+        test(test2List1, test2List2, 2, test2Expected);
+
+        int[] test3List1 = {9,9,9,9,9,9,9};
+        int[] test3List2 = {9,9,9,9};
+        int[] test3Expected = {8,9,9,9,0,0,0,1};
+        test(test3List1, test3List2, 3, test3Expected);
     }
 
     private static ListNode makeList(int[] list){

@@ -68,6 +68,12 @@ public class Solution {
             l2 = l2.next;
         }
 
+        if (carryover)
+        {
+            newNode = new ListNode(1);
+            lastNode.next = newNode;
+        }
+        
         return listRoot;
     }
 }

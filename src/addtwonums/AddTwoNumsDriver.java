@@ -46,8 +46,10 @@ public class AddTwoNumsDriver {
     }
 
     private static void test(int[] l1, int[] l2, int testNum, int[] expected) {
-        System.out.println("******************Test "+testNum+" ******************");
+        System.out.println("\n******************Test "+testNum+" ******************");
         
+        boolean testPassed = true;
+
         // create new nodes 
         ListNode l1Root = makeList(l1);
         ListNode l2Root = makeList(l2);
@@ -59,10 +61,18 @@ public class AddTwoNumsDriver {
         for (int elem : expected){
             System.out.println("Expected: " + elem);
             System.out.println("Result:   " + result.val);
-            System.out.println("Digits match: " + (elem == result.val));
-            assert(elem == result.val);
+            
+            if (elem != result.val){
+                testPassed = false;
+                System.out.println("Digits do not match");
+            }
+            else
+                System.out.println("Digits match");
             result = result.next;
         }
-
+        if (testPassed)
+            System.out.println("\n******************Test Passed******************\n");
+        else
+            System.out.println("\n******************Test Failed******************\n");
     }
 }

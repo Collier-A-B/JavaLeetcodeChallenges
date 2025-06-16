@@ -12,7 +12,7 @@ public class MergeKSortedListsDriver {
         System.out.println("Test Case 1:");
         System.out.println("Input:");
         printLists(test1);
-        ListNode result1 = Solution.mergeKLists(test1);
+        ListNode result1 = Solution.mergeKListsDivideAndConquer(test1);
         System.out.println("Output:");
         printList(result1);
         System.out.println("Expected: [1,1,2,3,4,4,5,6]\n");
@@ -22,7 +22,7 @@ public class MergeKSortedListsDriver {
         ListNode[] test2 = new ListNode[0];
         System.out.println("Test Case 2:");
         System.out.println("Input: []");
-        ListNode result2 = Solution.mergeKLists(test2);
+        ListNode result2 = Solution.mergeKListsDivideAndConquer(test2);
         System.out.println("Output:");
         printList(result2);
         System.out.println("Expected: []\n");
@@ -33,7 +33,7 @@ public class MergeKSortedListsDriver {
         test3[0] = null;
         System.out.println("Test Case 3:");
         System.out.println("Input: [[]]");
-        ListNode result3 = Solution.mergeKLists(test3);
+        ListNode result3 = Solution.mergeKListsDivideAndConquer(test3);
         System.out.println("Output:");
         printList(result3);
         System.out.println("Expected: []\n");
@@ -47,7 +47,7 @@ public class MergeKSortedListsDriver {
         System.out.println("Test Case 4:");
         System.out.println("Input:");
         printLists(test4);
-        ListNode result4 = Solution.mergeKLists(test4);
+        ListNode result4 = Solution.mergeKListsDivideAndConquer(test4);
         System.out.println("Output:");
         printList(result4);
         System.out.println("Expected: [1,2,3]\n");
@@ -59,7 +59,7 @@ public class MergeKSortedListsDriver {
         System.out.println("Test Case 5:");
         System.out.println("Input:");
         printLists(test5);
-        ListNode result5 = Solution.mergeKLists(test5);
+        ListNode result5 = Solution.mergeKListsDivideAndConquer(test5);
         System.out.println("Output:");
         printList(result5);
         System.out.println("Expected: [-2,-1,0,1,3,4]\n");

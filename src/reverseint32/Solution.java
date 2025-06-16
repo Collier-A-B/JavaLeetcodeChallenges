@@ -21,11 +21,16 @@ public class Solution {
         int result = 0;
         
         // the calculated remainder of "x" at each iteration
-        int remainder = 0;
+        int remainder;
+
+        if (x / 10 == 0)
+            return x;
 
         while (x != 0) {
             remainder = x % 10;
-            if ((result > (INT_MAX - remainder) / 10) || result < (INT_MIN - remainder) / 10)
+            if (result > 0 &&(result > (INT_MAX - remainder) / 10))
+                return 0;
+            else if (result < 0 && (result < (INT_MIN - remainder) / 10))
                 return 0;
             
             result = (result * 10) + remainder;

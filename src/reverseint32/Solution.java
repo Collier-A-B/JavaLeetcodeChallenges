@@ -9,28 +9,19 @@ public class Solution {
     // The method handles both positive and negative integers correctly.
     // It does not use any string manipulation or conversion to achieve the reversal.
 
-    // maximum integer value allowed
-    private static final int INT_MAX = Integer.MAX_VALUE;
-
-    // minimum integer value allowed
-    private static final int INT_MIN = Integer.MIN_VALUE;
-
     public static int reverse(int x) {
         // integer that is returned
         // at each iteration of the loop, the value is updated
         int result = 0;
         
-        // the calculated remainder of "x" at each iteration
-        int remainder;
-
-        if (x / 10 == 0)
-            return x;
+        
 
         while (x != 0) {
-            remainder = x % 10;
-            if (result > 0 &&(result > (INT_MAX - remainder) / 10))
+            // the calculated remainder of "x" at each iteration
+            int remainder = x % 10;
+            if (result > Integer.MAX_VALUE / 10 || (result == Integer.MAX_VALUE / 10 && remainder > 7))
                 return 0;
-            else if (result < 0 && (result < (INT_MIN - remainder) / 10))
+            else if (result < Integer.MIN_VALUE / 10 || (result == Integer.MIN_VALUE / 10 && remainder < -8))
                 return 0;
             
             result = (result * 10) + remainder;

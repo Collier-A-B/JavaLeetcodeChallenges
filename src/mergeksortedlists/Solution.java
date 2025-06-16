@@ -1,5 +1,10 @@
 package mergeksortedlists;
 
-public class Solution {
 
+class Solution {
+    public static ListNode mergeKLists(ListNode[] lists) {
+        ListNode returnList = null;
+        
+        return returnList;
+    }
 }

@@ -41,6 +41,9 @@ class Solution {
     }
 
     // Divide and conquer approach
+    // The time complexity is O(n log k) where n is the number of nodes in the merged list
+    // and k is the number of linked lists.
+    // This is more optimal than the previous solution.
     public static ListNode mergeKListsDivideAndConquer(ListNode[] lists) {
         if (lists == null || lists.length == 0) return null;
         return mergeKListsHelper(lists, 0, lists.length - 1);

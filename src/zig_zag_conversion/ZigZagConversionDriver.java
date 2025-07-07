@@ -10,7 +10,7 @@ public class ZigZagConversionDriver {
     public static void main(String[] args) {
 
         List<Pair> input = new ArrayList<>();
-        List<String> expected = new ArrayList();
+        List<String> expected = new ArrayList<>();
 
         // test case 1
         input.add(new Pair("PAYPALISHIRING", 3));
@@ -68,7 +68,7 @@ public class ZigZagConversionDriver {
                             """, testNum, inputString, 
                                 numRows, expected).toCharArray());
         
-        String result = Solution.convert(expected, numRows);
+        String result = Solution.convert(inputString, numRows);
         System.out.println(String.format("""
                 Method returned: %s\n
                 """, result).toCharArray());

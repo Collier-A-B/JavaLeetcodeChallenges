@@ -58,7 +58,7 @@ public class ZigZagConversionDriver {
 
 
         System.out.println(String.format("""
-                            \n\n\n************************************
+                            \n\n************************************
                             \tTest Case %d
 
                             Input string:    %s

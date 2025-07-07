@@ -5,14 +5,14 @@ import java.util.List;
 
 public class Solution {
     protected static String convert(String s, int numRows) {
-        if (numRows == 1)
+        if (numRows == 1 || numRows >= s.length())
             return s;
 
-        String result = "";
+        StringBuilder result = new StringBuilder(s.length());
 
-        List<StringBuilder> array2D = new ArrayList<>();
+        List<StringBuilder> array2D = new ArrayList<>(numRows);
         for (int i = 0; i < numRows; i++) {
-            array2D.add(new StringBuilder());
+            array2D.add(new StringBuilder(s.length()));
         }
 
         int currentRow = 0;
@@ -21,14 +21,11 @@ public class Solution {
         for (int i = 0; i < s.length(); i++) {
             array2D.get(currentRow).append(s.charAt(i));
 
-            System.out.println("Row Num: " + currentRow);
-            System.out.println("cuurent char: " + s.charAt(i));
-
-            if (direction == -1 && currentRow == 0) {
+            if (currentRow == 0) {
 
                 direction = 1;
 
-            } else if (direction == 1 && currentRow == numRows - 1) {
+            } else if (currentRow == numRows - 1) {
 
                 direction = -1;
 
@@ -36,9 +33,8 @@ public class Solution {
             currentRow += direction;
         }
         for (StringBuilder row : array2D){
-            String stringRow = row.toString();
-            result += stringRow;
+            result.append(row);
         }
-        return result;
+        return result.toString();
     }
 }

@@ -32,6 +32,13 @@ public class FirstLastPositionDriver {
             targets.add(0);
             expectedResult.add(expected3);
 
+            // Test Case 4
+            final int[] input4 = {1};
+            final int[] expected4 = {0, 0};
+            inputs.add(input4);
+            expectedResult.add(expected4);
+            targets.add(1);
+
             if (expectedResult.size() != inputs.size())
                 throw new Exception("expectedResults.size() != inputs.size()");
 

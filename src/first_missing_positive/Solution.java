@@ -5,7 +5,7 @@ public class Solution {
         
         // re-arrange the array
         for(int i = 0; i < nums.length; ) {
-            if (nums[i] <= nums.length && nums[i] >= 1 && nums[i] != i+1) {
+            if (nums[i] <= nums.length && nums[i] >= 1 && nums[i] != i+1 && nums[nums[i]-1] != nums[i]) {
                 int temp = nums[i];
                 int targetIndx = nums[i] - 1;
                 nums[i] = nums[targetIndx];

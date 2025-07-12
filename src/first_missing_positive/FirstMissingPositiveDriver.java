@@ -12,16 +12,19 @@ public class FirstMissingPositiveDriver {
         List<Integer> expected_output_list = new ArrayList<>();
         
         // Test Case 1
+        /* */
         int[] input1 = {1, 2, 0};
         input_list.add(input1);
         expected_output_list.add(3);
 
         // Test Case 2
-        int[] input2 = {3, 4, -1, -1};
+        /* */
+        int[] input2 = {3, 4, -1, 1};
         input_list.add(input2);
         expected_output_list.add(2);
 
         // Test Case 3
+        /* */
         int[] input3 = {7, 8, 9, 11, 12};
         input_list.add(input3);
         expected_output_list.add(1);
@@ -31,7 +34,7 @@ public class FirstMissingPositiveDriver {
             runTestCase(input_list.get(i), expected_output_list.get(i), i+1);
         }
 
-        System.out.println("All TESTS HAVE BEEN RUN. YOUR RESULTS ARE...");
+        System.out.println("All TESTS HAVE BEEN RUN. YOUR RESULTS ARE...\n");
 
         if (TESTS_FAILED == 0) {
             System.out.println("ALL TESTS PASSED");

@@ -29,6 +29,11 @@ public class FirstMissingPositiveDriver {
         input_list.add(input3);
         expected_output_list.add(1);
 
+        // Test Case 4
+        int[] input4 = {1, 1};
+        input_list.add(input4);
+        expected_output_list.add(2);
+
         // Run Test Cases
         for(int i = 0; i < input_list.size(); i++) {
             runTestCase(input_list.get(i), expected_output_list.get(i), i+1);

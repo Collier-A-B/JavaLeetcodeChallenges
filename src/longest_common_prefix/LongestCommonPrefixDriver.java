@@ -21,7 +21,7 @@ public class LongestCommonPrefixDriver {
         expectedOutputList.add(expected);
 
         // Test Case 2
-        String[] input2 = {"flower", "flow", "flight"};
+        String[] input2 = {"dog", "racecar", "car"};
         expected = "";
         inputList.add(input2);
         expectedOutputList.add(expected);

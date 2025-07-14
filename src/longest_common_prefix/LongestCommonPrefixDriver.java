@@ -9,7 +9,7 @@ import java.util.Set;
 public class LongestCommonPrefixDriver {
     //private static int TESTS_PASSED = 0;
     //private static int TESTS_FAILED = 0;
-    private static Set<Integer> FAILED_TESTS = new HashSet<>();
+    private static final Set<Integer> FAILED_TESTS = new HashSet<>();
     public static void main(String[] args) {
         List<String[]> inputList = new ArrayList<>();
         List<String> expectedOutputList = new ArrayList<>();

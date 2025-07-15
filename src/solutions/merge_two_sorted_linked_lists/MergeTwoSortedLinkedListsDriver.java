@@ -74,7 +74,7 @@ public class MergeTwoSortedLinkedListsDriver {
 
     private static void runTestCase(int[] l1, int[] l2, int[] expectedOutput, int testNum) {
         System.out.println("\n****************************************************************");
-        System.out.println("\n\t\tTEST CASE " + testNum);
+        System.out.println("\n\t\t\tTEST CASE " + testNum);
 
         System.out.println("\n\tList1: " + Arrays.toString(l1));
         System.out.println("\tList2: " + Arrays.toString(l2));

@@ -26,6 +26,10 @@ public class IntegerToRomanDriver {
         inputList.add(1994);
         expectedList.add("MCMXCIV");
 
+        // Test Case 4
+        inputList.add(100);
+        expectedList.add("C");
+
         // Run each test case
         int testNum;
         for(testNum = 0; testNum < inputList.size(); testNum++){

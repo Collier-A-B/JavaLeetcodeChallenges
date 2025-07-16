@@ -30,7 +30,7 @@ public class Solution {
                         retStr.append("CD");        // num == 400
                     } else {
                         for(; num > 0; num--) {
-                            retStr.append('c');     // num >= 100
+                            retStr.append('C');     // num >= 100
                         }
                     }
                 }

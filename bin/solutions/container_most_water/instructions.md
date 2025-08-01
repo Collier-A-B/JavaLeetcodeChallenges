@@ -26,3 +26,5 @@ Output: 1
 n == height.length
 2 <= n <= 105
 0 <= height[i] <= 104
+
+## COMPLETED ON 8/1/2025

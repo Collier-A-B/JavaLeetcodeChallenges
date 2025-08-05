@@ -35,10 +35,9 @@ public class CombinationSumDriver {
         canidatesList.add(new int[]{2});
         targets.add(1);
         ExpectedResultPOJO expectedResult3 = new ExpectedResultPOJO(new ArrayList<>());
-        expectedResult3.addCombination(new ArrayList<>()); // No combinations possible
         expecResults.add(expectedResult3);
-        
 
+        
         // Run each test case
         for (int i = 0; i < canidatesList.size(); i++) {
             int[] canidates = canidatesList.get(i);
